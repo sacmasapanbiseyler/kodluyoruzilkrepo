@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+<head runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Basic Page Needs-->
+	<title>Dönüştürücü</title>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+    <!-- Basic Page Needs == -->
+
+    <!-- Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <!-- Mobile Specific Metas == -->
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/default.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/media-queries.css"/>
+    <!-- CSS == -->
+
+    <!-- Script -->
+	<script src="js/modernizr.js"></script>
+    <!-- Script == -->
+
+    <!-- Favicons -->
+	<link rel="shortcut icon" href="favicon.png"/>
+    <!-- Favicons == -->
+
+</head>
+
+<body>
+     <!-- Header -->
+   <form id="form1" runat="server">
+   <header id="home">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Navigatörü Göster</a>
+	     <a class="mobile-btn" href="#" title="Hide navigation">Navigatörü Gizle</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Çevirici</a></li>
+            <li><a class="smoothscroll" href="#about">Sistem Analizi II Ödevi</a></li>
+            <li><a class="smoothscroll" href="#testimonials">JPG-PNG Nedir</a></li>
+            <li><a class="smoothscroll" href="#contact">Kayıt</a></li>
+         </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">JPG - PNG Dönüştürücü</h1>
+            <h3>Dönüştürmek istediğiniz <span>JPG</span>, dosyasını upload ediniz. <br/> Kısa süre içinde <span>PNG</span> dosyasına dönüştürülecektir. </h3>
+            <div>
+                <asp:FileUpload ID="File1" runat="server" Visible="False" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Gönder" Visible="False" />
+            </div>
+            <hr/>
+            <asp:Label ID="Label1" runat="server" Text="İşlem yapabilmek için giriş yapmanız gerekli."></asp:Label>
+            <br/>
+            <br/>
+            <asp:TextBox ID="TextBox1" placeholder="Kullanıcı Adı" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" placeholder="Şifre" Textmode="Password" runat="server"></asp:TextBox>
+            <br/>
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Giriş Yap" />
+
+
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+   </header> <!-- Header End -->
+       <!-- About Section-->
+   <section id="about">
+       <div class="row">
+         <div class="three columns">
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+         </div>
+
+         <div class="nine columns main-col">
+            <h2>Sistem Analizi II Ödev Tanıtımı </h2>
+            <p>Projem Unity yazılımı aracılığıyla, uzun yıllardır televizyonda bulunan Kim Milyoner Olmak İster programının kopyasını yapmaktır. 
+               Proje içerisinde farklı konularla ilgili üçer soru bulunuyor.Toplamda ise 36 soruya denk bir soru havuzumuz var.
+               Tur içerisinde ise bu sorulardan 12 tanesini görebiliyoruz. 12 sorunu tümüne doğru yanıt verirseniz en yüksek skora ulaşmış oluyorsunuz.
+            </p>
+
+            <div class="row">
+               <div class="columns contact-details">
+                  <h2>Final Hedefleri</h2>
+                  <p class="address">
+				    <span>Muhammed Mustafa KATAR</span><br/>
+				    <span>1825010055 </span><br/>
+				    <span>Bilgisayar Programcılığı 2</span><br/>
+                    <span>katardata00@gmail.com</span>
+                  </p>
+               </div>
+               <div class="columns download">
+                  <p>
+                      <a href="https://docs.google.com/document/d/1SZhd6Hvn0NFrcsmimajrsHpm0fAmXmw5/" target="_blank" class="button"><i class="fa fa-file"></i>Dökümantasyona Ulaş</a>
+                  </p>
+                  <p>
+                    <a href="https://drive.google.com/file/d/1rO2Uqe_kYn16SNhkKz1M914zdYQFaPMW/" target="_blank" class="button"><i class="fa fa-download"></i>Oyunu İndir</a>
+                  </p>
+               </div>
+            </div> <!-- end row -->
+         </div> <!-- end .main-col -->
+      </div>
+   </section> <!-- About Section End-->
+       <!-- Testimonials Section-->
+   <section id="testimonials">
+      <div class="text-container">
+         <div class="row">
+            <div class="two columns header-col">
+               <h1><span>JPG-PNG Nedir?</span></h1>
+            </div>
+            <div class="ten columns flex-container">
+               <div class="flexslider">
+                  <ul class="slides">
+                     <li>
+                        <blockquote>
+                           <p>Portable Network Graphics: PNG, "Taşınabilir Ağ Grafiği" anlamındaki (Portable Network Graphics) 'in kısaltmasıdır ve kayıpsız sıkıştırarak görüntü saklamak için kullanılan bir saklama biçimidir. 
+                              PNG biçiminde paletli ya da gerçek renkte görüntüler seçimlik bir saydamlık kanalıyla saklanabilir. 
+                           </p>
+                           <cite>Wikipedia</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Joint Photographic Experts Group: JPEG "Birleşik Fotoğraf Uzmanları Grubu" anlamındaki Joint Photographic Experts Group'in kısaltmasıdır ve görüntüde küçük bozulmalar yaparak büyük boyut kazançları elde eden saklama biçimidir. 
+                              JPEG görüntülerde transparanlık özelliği bulunmamakla beraber renk skalası daraltılmıştır.
+                           </p>
+                           <cite>Wikipedia</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+                  </ul>
+               </div> <!-- div.flexslider ends -->
+            </div> <!-- div.flex-container ends -->
+         </div> <!-- row ends -->
+       </div>  <!-- text-container ends -->
+   </section> <!-- Testimonials Section End-->
+
+   <!-- Contact Section-->
+   <section id="contact">
+         <div class="row section-head">
+             <div class="two columns header-col">
+                 <h1><span>Kayıt Yeri</span></h1>
+             </div>
+             <div class="ten columns">
+                 <p class="lead">Hizmeti kullanabilmek için giriş yapmanız gerekmektedir. Her e-posta için bir hesap oluşturulabilir.Şifre güvenliğinize özen gösteriniz. 
+                 </p>
+             </div>
+         </div>
+            <div class="row">
+            <div class="eight columns">
+               <!-- form -->
+					<fieldset>
+                  <div>
+                    <label for="contactName">Kullanıcı Adı <span class="required">*</span></label>
+                    <asp:TextBox ID="TextBox3" type="text" size="35" placeholder="Kullanıcı Adı" runat="server"></asp:TextBox>
+                  </div>
+                    <div>
+					<label for="contactEmail">Email <span class="required">*</span></label>
+					<asp:TextBox ID="TextBox4" type="text" size="35" placeholder="E-Mail" runat="server"></asp:TextBox>
+                  </div>
+                   <div>
+				   <label for="contactSubject">Şifre <span class="required">*</span></label>
+				   <asp:TextBox ID="TextBox5" Textmode="Password" size="35" placeholder="Şifre" runat="server"></asp:TextBox>
+                  </div>
+                    <div> 
+                       <asp:Button ID="Button3" class="submit" runat="server" OnClick="Button3_Click" Text="Kayıt Ol" />
+                    </div>
+					</fieldset>
+                 <!-- Form End -->
+            </div>
+      </div>
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>Ömer Demirkol &copy;</li>
+               <li>Tasarımı çaldığım yer <a href="http://srikrishnacommunication.com/Giridesigns.html" title="Styleshout" target="_blank">Giri Designs</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End == -->
+       <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+    </form>
+</body>
+</html>

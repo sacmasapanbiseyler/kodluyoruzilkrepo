@@ -36,3 +36,5 @@ Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi 
 <hr>
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+![Resim](https://raw.githubusercontent.com/sacmasapanbiseyler/kodluyoruzilkrepo/main/Resim.png)
